@@ -147,7 +147,26 @@ We have provided test data for all the resources.
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. The core features of Node.js and Express and why they are useful.
+  They allow you to run javascript outside of the browser, and Express
+  allows for easy route creation for an API. Which is really benificial
+  because then you can develop the entire front and backend in one language.
+
 1. Understand and explain the use of Middleware.
+  Middleware allows to easily extract and implement repeatable logic into
+  separate route handlers. Making the code more DRY and easier to follow.
+
 1. The basic principles of the REST architectural style.
+  Everything is a resource
+  Each resource is available from a unique url
+  Resources can have multiple representations. IE get and post to /same/url
+  Resource management happens via HTTP methods. IE get, post, put, delete
+
 1. Understand and explain the use of Express Routers.
+  Express routers are separate routes divided into different files.
+  Allows for better management of multi url api's and makes things scallable
+
 1. Describe tooling used to manually test the correctness of an API.
+  HTTPie is a cli tool for easy quick testing API url's
+  Postman is a gui tool that does what HTTPie does, but is better for 
+  managing larger datasets and keys, things that would be cumbersome in 
+  a shell.
