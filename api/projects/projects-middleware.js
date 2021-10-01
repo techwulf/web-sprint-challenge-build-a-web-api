@@ -12,7 +12,7 @@ async function validateProjectId(req, res, next) {
 
 async function validateProject(req, res, next) {
   const project = req.body;
-  if(project.name && project.description && project.completed) {
+  if(project.name && project.description && project.completed !== undefined) {
     req.project = project;
     next();
   } else {
